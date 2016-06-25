@@ -7,7 +7,7 @@ import static org.lwjgl.opengl.GL11.glEnd;
 import static org.lwjgl.opengl.GL11.glTexCoord2f;
 import static org.lwjgl.opengl.GL11.glVertex2f;
 
-//import org.newdawn.slick.opengl.Texture;
+import org.newdawn.slick.opengl.Texture;
 
 //i like to mover mover
 public abstract class Mover {
@@ -18,7 +18,7 @@ public abstract class Mover {
 	protected Vector2f size;
 	
 	protected String textureFile;
-	//protected Texture texture;
+	protected Texture texture;
 	
 	protected int health;
 	protected int maxHealth;
@@ -31,7 +31,7 @@ public abstract class Mover {
 	Mover(Vector2f location, Vector2f size, int health){
 		this.location = location;
 		this.size = size;
-		//this.textureFile = textureFile;
+		this.textureFile = textureFile;
 		this.health = health;
 	}
 	
