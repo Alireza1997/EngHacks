@@ -15,7 +15,7 @@ public class IceWall extends Tile {
 		super(p1, y_coordinate, x_coordinate );
 	}
 	Texture iceTexture;
-	TemperatureReader r1 = new TemperatureReader();
+	SensorReader r1 = new SensorReader();
 
 	public void doEffects(){	
 		

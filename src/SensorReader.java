@@ -2,9 +2,12 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 
-public class TemperatureReader {
+public class SensorReader {
 	
-	Double temperature;
+	double temperature;
+	double light;
+	boolean temp = true;
+	
 	String str;
 	
 	public void readTemperature(){
@@ -13,7 +16,13 @@ public class TemperatureReader {
 			
 			//read temperature
 			while((str=readFile.readLine())!=null && str.length()!=0){
-				temperature = Double.parseDouble(str);
+				if (temp) {
+					temperature = Double.parseDouble(str);
+				}
+				else {
+					light = Double.parseDouble(str);
+				}
+				temp = !temp;
 			}
 			
 			readFile.close();
