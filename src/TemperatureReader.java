@@ -4,14 +4,17 @@ import java.io.IOException;
 
 public class TemperatureReader {
 	
-	int temperature;
+	Double temperature;
+	String str;
 	
 	public void readTemperature(){
 		try {//read temperature from .txt
 			BufferedReader readFile = new BufferedReader (new FileReader("Temperature.txt"));
 			
 			//read temperature
-			temperature = Integer.parseInt(readFile.readLine());
+			while((str=readFile.readLine())!=null && str.length()!=0){
+				temperature = Double.parseDouble(str);
+			}
 			
 			readFile.close();
 		}catch (IOException e){

@@ -84,5 +84,7 @@ public class IceWall extends Tile {
 			reset();
 		}
 		
+		System.out.println(r1.temperature);
+		
 	}
 }
