@@ -11,16 +11,16 @@ import org.lwjgl.opengl.DisplayMode;
 import org.lwjgl.opengl.GL11;
 
 abstract public class Tile {
-	int WIDTH = 50;
-	int HEIGHT = 50;
+	static int WIDTH = 50;
+	static int HEIGHT = 50;
 	int x_coordinate;
 	int y_coordinate;
 	Player p1;
 	
 	public Tile (Player p1, int y_coordinate, int x_coordinate){
 		this.p1 = p1;
-		this.x_coordinate = x_coordinate;
-		this.y_coordinate = y_coordinate;
+		this.x_coordinate = 50*x_coordinate;
+		this.y_coordinate = 450 - 50*y_coordinate;
 	}
 	
 	

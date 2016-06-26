@@ -10,3 +10,8 @@
 /Floor.class
 /FloorID.class
 /Direction.class
+/Door.class
+/GameScreen.class
+/Runner.class
+/IceWall.class
+/TemperatureReader.class

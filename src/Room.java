@@ -67,8 +67,8 @@ public class Room {
 					tiles [i][n] = new Sand(p1, i , n);				
 				if (charTiles[i][n] == 'H')
 					tiles [i][n] = new Hole(p1, i ,n);	
-				//if (charTiles[i][n] == 'S')
-					//tiles [i][n] = new Stair(p1, i, n);
+				if (charTiles[i][n] == 'U')
+					tiles [i][n] = new IceWall(p1, i, n);
 			}
 		}
 	}
