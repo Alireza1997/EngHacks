@@ -70,7 +70,7 @@ public abstract class Mover {
 		location.addY(velocity.getY());
 	}
 	
-	//subtract the health of mover by set ammount
+	//subtract the health of mover by set amount
 	public void takeDamage(int damage){
 		health -= damage;
 	}
