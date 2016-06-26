@@ -1,5 +1,5 @@
 2 templates
-E0
+D0
 WWWWWWWWWWWWWWWW
 W.....HIIH.....W
 W....HHIIHH....W
@@ -10,7 +10,7 @@ WHHHHHIIIIHHHHHW
 W....HHIIHH....W
 W.....HIIH.....W
 WWWWWWWWWWWWWWWW
-E1
+D1
 WWWWWWWWWWWWWWWW
 W....HH..HH....W
 W..............W
