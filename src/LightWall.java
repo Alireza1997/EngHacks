@@ -7,13 +7,13 @@ public class LightWall extends Tile {
 	
 	SensorReader l1 = new SensorReader();
 	
+	
 	public void doEffects(){	
 		l1.readTemperature();
-		
 		if (l1.light != 0){
 		
 			//color & render
-			glColor3f(0f, 0f, 0f);
+			glColor3f(1f, 1f, 1f);
 			drawTile();
 					
 			

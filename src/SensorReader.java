@@ -17,8 +17,8 @@ public class SensorReader {
 			while((str=readFile.readLine())!=null && str.length()!=0){
 				temperature = Double.parseDouble(str);
 				light = Double.parseDouble(readFile.readLine());
-				//System.out.println(temperature);
-				//System.out.println(light);
+				System.out.println(temperature);
+				System.out.println(light);
 			}
 			
 			readFile.close();
