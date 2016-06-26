@@ -8,6 +8,7 @@ public class LightSand extends Tile {
 	SensorReader r1 = new SensorReader();
 	
 	public void doEffects(){		
+		r1.readTemperature();
 		
 		if(r1.light != 0 )
 			glColor3f(1f, 1f, 1f);	
@@ -19,5 +20,6 @@ public class LightSand extends Tile {
 		reset();
 		
 		System.out.println(r1.light);
+		System.out.println(r1.temperature);
 	}
 }

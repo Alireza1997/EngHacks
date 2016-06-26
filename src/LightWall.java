@@ -8,6 +8,7 @@ public class LightWall extends Tile {
 	SensorReader l1 = new SensorReader();
 	
 	public void doEffects(){	
+		l1.readTemperature();
 		
 		if (l1.light != 0){
 		
@@ -20,7 +21,7 @@ public class LightWall extends Tile {
 			glColor3f(.87f, .84f, .59f);
 			drawTile();
 		}
-		
+				
 		if(p1.velocity.getX() < 0){
 			if (p1.location.getY() + p1.velocity.getY() < y_coordinate + p1.size.getY() && p1.location.getY() + p1.velocity.getY() > y_coordinate - p1.size.getY())
 				if (p1.location.getX() + p1.velocity.getX() < x_coordinate + p1.size.getX() && p1.location.getX() + p1.velocity.getX() > x_coordinate ){
