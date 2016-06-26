@@ -6,7 +6,6 @@ public class SensorReader {
 	
 	double temperature;
 	double light;
-	boolean temp = true;
 	
 	String str;
 	
@@ -16,13 +15,10 @@ public class SensorReader {
 			
 			//read temperature
 			while((str=readFile.readLine())!=null && str.length()!=0){
-				if (temp) {
-					temperature = Double.parseDouble(str);
-				}
-				else {
-					light = Double.parseDouble(str);
-				}
-				temp = !temp;
+				temperature = Double.parseDouble(str);
+				light = Double.parseDouble(readFile.readLine());
+				//System.out.println(temperature);
+				//System.out.println(light);
 			}
 			
 			readFile.close();
